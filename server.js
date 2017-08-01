@@ -3,7 +3,7 @@ var http = require("http");
 
 // =====================================================================
 
-// Then define the ports we want to listen to
+// Then define the ports we want to listen to (api for one, web for another)
 var PORTONE = 7000;
 var PORTTWO = 7500;
 
@@ -11,11 +11,11 @@ var PORTTWO = 7500;
 
 // We need two different functions to handle requests, one for each server.
 function handleRequestOne(request, response) {
-  response.end("You're a JavaScript mastermind!");
+  response.end("You Look Lovely");
 }
 
 function handleRequestTwo(request, response) {
-  response.end("You smell.");
+  response.end("Oh Well, Tomorrow is another day.");
 }
 
 // =====================================================================
